@@ -1,0 +1,11 @@
+{
+  "name": "haiku-random",
+  "version": "0.5.0",
+  "description": "Allows the developer to include haiku gathered from www.randomhaiku.com in their projects ",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "Ian Price",
+  "license": "ISC"
+}
