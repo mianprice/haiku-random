@@ -1,11 +1,22 @@
 {
   "name": "haiku-random",
   "version": "0.5.0",
-  "description": "Allows the developer to include haiku gathered from www.randomhaiku.com in their projects ",
+  "description": "Provides a set of 1500 ",
+  "keywords": [
+    "haiku",
+    "poetry",
+    "random"
+  ],
+  "homepage": "https://github.com/mianprice/haiku-random",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "jasmine"
   },
   "author": "Ian Price",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^2.5.3",
+    "jasmine-spec-reporter": "^3.2.0"
+  },
+  "dependencies": {}
 }
