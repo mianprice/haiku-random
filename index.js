@@ -6,11 +6,27 @@ function Haiku() {
 }
 
 Haiku.prototype = {
-  random: function() {
-    return this.set[Math.floor(Math.random() * this.set.length)];
+  random: function(format) {
+    var result = this.set[Math.floor(Math.random()*this.set.length)];
+    if (format !== undefined) {
+      if (format === "html") {
+        result = result.replace(/\n/g,"<br>");
+      } else if (format === "arr") {
+        result = result.split("\n");
+      }
+    }
+    return result;
   },
-  specific: function(index) {
-    return this.set[index];
+  specific: function(index, format) {
+    var result = this.set[index];
+    if (format !== undefined) {
+      if (format === "html") {
+        result = result.replace(/\n/g,"<br>");
+      } else if (format === "arr") {
+        result = result.split("\n");
+      }
+    }
+    return result;
   }
 };
 
